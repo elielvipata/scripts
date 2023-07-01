@@ -1,0 +1,8 @@
+-- Copy and paste the following lines into the terminal
+
+sudo mysql -u root
+
+CREATE USER 'yourusername'@'localhost' IDENTIFIED BY 'yourpassword';
+GRANT PRIVILEGE ON database.table TO 'yourusername'@'host';
+GRANT CREATE, ALTER, DROP, INSERT, UPDATE, DELETE, SELECT, REFERENCES, RELOAD on *.* TO 'yourusername'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
