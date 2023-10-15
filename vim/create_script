@@ -1,0 +1,7 @@
+#!/bin/bash
+
+mkdir -p ~/.vim ~/.vim/autoload ~/.vim/backup ~/.vim/colors ~/.vim/plugged
+touch ~/.vimrc
+cd ~/.vim/colors
+curl -o molokai.vim https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
+cp .vimrc ~
