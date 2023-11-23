@@ -64,3 +64,6 @@ set history=1000
 
 " Sets up a new molokai theme
 :colorscheme molokai
+
+" Show line numbers
+set number
