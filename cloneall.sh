@@ -30,3 +30,4 @@ git clone $XINU ../xinuOS
 git clone $UX ../unifi-ux 
 git clone $UI ../UI-ResumeFiltering
 
+cat branch_terminal >> ~/.bashrc
