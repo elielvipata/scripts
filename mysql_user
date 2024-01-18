@@ -4,5 +4,5 @@ sudo mysql -u root
 -- After the prompt pops up, paste this 
 
 CREATE USER 'yourusername'@'localhost' IDENTIFIED BY 'yourpassword';
-GRANT CREATE, ALTER, DROP, INSERT, UPDATE, DELETE, SELECT, REFERENCES, RELOAD on *.* TO 'yourusername'@'localhost' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON *.* TO 'your_username'@'your_host' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
