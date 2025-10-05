@@ -32,13 +32,20 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# command shortcuts
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias programming='cd $HOME/Programming'
 alias google='google-chrome-stable'
 alias packages='cd $HOME/Packages'
+
+# Copy git token to clipboard for pushes and merges
+alias token='echo -n $TOKEN | xsel --clipboard --input'
+
+# path extensions
 export PATH=$PATH:/home/eliel/Packages/WebStorm-252.26830.93/bin
 export PATH=$PATH:/home/eliel/Packages/RustRover-2025.2.2/bin
+
 
 ## Prompt oonfiguration
 ## Function to get the branch name in a git repo:
