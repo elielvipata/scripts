@@ -1,6 +1,0 @@
-#!/bin/bash
-
-sudo apt install apache2 -y
-sudo apt install mysql-server
-sudo apt install php-mysql
-sudo apt install php

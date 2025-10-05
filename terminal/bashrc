@@ -1,0 +1,54 @@
+#
+# ~/.bashrc
+# Author: Eliel Vipata (elielvipata)
+# This is the base configuration and these are the variables being used in the PS1 Prompt
+# | Sequence | Meaning                                   |
+# | -------- | ----------------------------------------- |
+# | `\u`     | Current username                          |
+# | `\h`     | Hostname (up to the first `.`)            |
+# | `\w`     | Current working directory                 |
+# | `\W`     | Basename of the current working directory |
+# | `\$`     | Shows `$` for normal users, `#` for root  |
+# | `\t`     | Current time (HH:MM:SS)                   |
+# | `\d`     | Current date (Weekday Month Date)         |
+# | `\!`     | Command number in history                 |
+# | `\#`     | Command number of current session         |
+# | `\n`     | Newline                                   |
+#
+
+# Color Codes
+# | Color   | Code         | Example |
+# | ------- | ------------ | ------- |
+# | Black   | `\[\e[30m\]` |         |
+# | Red     | `\[\e[31m\]` |         |
+# | Green   | `\[\e[32m\]` |         |
+# | Yellow  | `\[\e[33m\]` |         |
+# | Blue    | `\[\e[34m\]` |         |
+# | Magenta | `\[\e[35m\]` |         |
+# | Cyan    | `\[\e[36m\]` |         |
+# | White   | `\[\e[37m\]` |         |
+
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias programming='cd $HOME/Programming'
+alias google='google-chrome-stable'
+alias packages='cd $HOME/Packages'
+export PATH=$PATH:/home/eliel/Packages/WebStorm-252.26830.93/bin
+export PATH=$PATH:/home/eliel/Packages/RustRover-2025.2.2/bin
+
+## Prompt oonfiguration
+## Function to get the branch name in a git repo:
+parse_git_branch() {
+  branch=$(git branch --show-current 2>/dev/null)
+  if [ -n "$branch" ]; then
+    echo "[$branch]"
+  fi
+}
+
+
+PS1="\[\e[31m\][\d - \t] \[\e[32m\][\u@\h] \[\e[37m\][\w\$]\[\e[33m\]\$(parse_git_branch)\[\e[37m\] "
+. "$HOME/.cargo/env"

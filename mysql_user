@@ -1,8 +1,0 @@
--- Copy and paste the following line into the terminal
-sudo mysql -u root
-
--- After the prompt pops up, paste this 
-
-CREATE USER 'yourusername'@'localhost' IDENTIFIED BY 'yourpassword';
-GRANT ALL PRIVILEGES ON *.* TO 'your_username'@'your_host' WITH GRANT OPTION;
-FLUSH PRIVILEGES;

@@ -1,5 +1,0 @@
-Linux 5.19.0-43-generic (eliel-Aspire-TC-1760) 	06/08/2023 	_x86_64_	(12 CPU)
-
-09:15:22 PM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
-09:15:23 PM    844756   1209924   8867124     73.73     17980   1797680  29585364    209.47   3821996   6230284       220
-Average:       844756   1209924   8867124     73.73     17980   1797680  29585364    209.47   3821996   6230284       220
