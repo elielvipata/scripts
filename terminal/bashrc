@@ -45,7 +45,7 @@ alias token='echo -n $TOKEN | xsel --clipboard --input'
 # path extensions
 export PATH=$PATH:/home/eliel/Packages/WebStorm-252.26830.93/bin
 export PATH=$PATH:/home/eliel/Packages/RustRover-2025.2.2/bin
-
+export PATH=$PATH:/home/eliel/Packages/idea-IC-252.26830.84/bin
 
 ## Prompt oonfiguration
 ## Function to get the branch name in a git repo:
