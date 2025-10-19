@@ -44,9 +44,11 @@ alias python='python3'
 alias token='echo -n $TOKEN | xsel --clipboard --input'
 
 # path extensions
-export PATH=$PATH:/home/eliel/Packages/WebStorm-252.26830.93/bin
-export PATH=$PATH:/home/eliel/Packages/RustRover-2025.2.2/bin
-export PATH=$PATH:/home/eliel/Packages/idea-IC-252.26830.84/bin
+export PATH=$PATH:/home/$USER/Packages/WebStorm-252.26830.93/bin
+export PATH=$PATH:/home/$USER/Packages/RustRover-2025.2.2/bin
+export PATH=$PATH:/home/$USER/Packages/idea-IC-252.26830.84/bin
+export PATH=$PATH:/home/$USER/Packages/clion-2025.2.3/bin
+export PATH=$PATH:/home/$USER/Packages/pycharm-2025.2.3/bin
 
 ## Prompt oonfiguration
 ## Function to get the branch name in a git repo:
