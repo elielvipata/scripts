@@ -67,3 +67,11 @@ set history=1000
 
 " Show line numbers
 set number
+
+" Set relative line numbers"
+set relativenumber
+
+" Remap Escape to qqn in common modes"
+inoremap qq <Esc>
+vnoremap qq <Esc>
+cnoremap qq <Esc>
